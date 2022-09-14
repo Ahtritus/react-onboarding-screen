@@ -19,7 +19,9 @@ function ProgressComponent(props) {
   return (
     <div className="centreDiv">
       <ThemeProvider theme={theme}>
-        <Box sx={{ width: "400px" }}>
+        <Box
+          sx={{ width: "400px", paddingTop: "30px", paddingBottom: "100px" }}
+        >
           <Stepper
             activeStep={props.activeStep}
             alternativeLabel

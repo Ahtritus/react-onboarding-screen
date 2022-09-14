@@ -1,16 +1,10 @@
+import { Typography } from "@mui/material";
 import React from "react";
 import icon from "./assets/eden_logo.png";
 
-const divStyle = {
-  whiteSpace: "nowrap",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-};
-
 function Header() {
   return (
-    <div style={divStyle}>
+    <div className="centreDiv">
       <img
         src={icon}
         alt="Eden Icon"
@@ -20,7 +14,9 @@ function Header() {
           paddingRight: "10px",
         }}
       />
-      <h1>Eden</h1>
+      <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+        Eden
+      </Typography>
     </div>
   );
 }
