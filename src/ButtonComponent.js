@@ -11,23 +11,17 @@ const theme = createTheme({
   },
 });
 
-const divStyle = {
-  whiteSpace: "nowrap",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-};
-
 function ButtonComponent(props) {
   return (
-    <div style={divStyle}>
+    <div className="centreDiv">
       <ThemeProvider theme={theme}>
         <Button
           color="primary"
           variant="contained"
           sx={{ width: 400, padding: 1 }}
+          onClick={() => props.stepChanger(props.step + 1)}
         >
-          {props.text}
+          {props.step < 3 ? "Create Workspace" : "Launch Eden"}
         </Button>
       </ThemeProvider>
     </div>
