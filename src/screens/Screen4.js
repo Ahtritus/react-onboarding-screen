@@ -17,7 +17,8 @@ function Screen4(props) {
       </div>
       <Typography align="center" sx={{ paddingBottom: "50px" }}>
         <Typography variant="h4" sx={{ fontWeight: "bold" }}>
-          Congratulations, {props.displayName}!
+          Congratulations, {props.displayName ? props.displayName : "Anonymous"}
+          !
         </Typography>
         <Typography variant="h6" component="h6">
           You have completed onboarding, you can start using Eden!
