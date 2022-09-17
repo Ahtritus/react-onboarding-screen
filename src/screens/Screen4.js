@@ -2,7 +2,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { Typography } from "@mui/material";
 import React from "react";
 
-function Screen4() {
+function Screen4(props) {
   return (
     <div className="row">
       <div className="centreDiv">
@@ -17,7 +17,7 @@ function Screen4() {
       </div>
       <Typography align="center" sx={{ paddingBottom: "50px" }}>
         <Typography variant="h4" sx={{ fontWeight: "bold" }}>
-          Congratulations, Eren!
+          Congratulations, {props.displayName}!
         </Typography>
         <Typography variant="h6" component="h6">
           You have completed onboarding, you can start using Eden!

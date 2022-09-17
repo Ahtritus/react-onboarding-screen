@@ -1,7 +1,7 @@
 import { FormControl, Grid, TextField, Typography } from "@mui/material";
 import React from "react";
 
-function Screen1() {
+function Screen1(props) {
   return (
     <div>
       <Grid
@@ -35,6 +35,7 @@ function Screen1() {
             margin="normal"
             InputLabelProps={{ shrink: true }}
             style={{ width: 400 }}
+            onChange={(e) => props.setName(e.target.value)}
           />
         </FormControl>
       </Grid>
