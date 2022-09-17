@@ -22,19 +22,21 @@ function Screen3() {
             We'll streamline your setup experience accordingly.
           </Typography>
         </Typography>
-        <div className="row" style={{ "white-space": "nowrap" }}>
-          <CardComponent
-            activeCard={activeCard}
-            activeCardChanger={setActiveCard}
-            title="For myself"
-            subtitle="Write better. think more clearly. Stay organized."
-          />
-          <CardComponent
-            activeCard={activeCard}
-            activeCardChanger={setActiveCard}
-            title="With my team"
-            subtitle="Wikis, docs, tasks & projects, all in one place"
-          />
+        <div className="row">
+          <Grid container spacing={0} justifyContent="center">
+            <CardComponent
+              activeCard={activeCard}
+              activeCardChanger={setActiveCard}
+              title="For myself"
+              subtitle="Write better. think more clearly. Stay organized."
+            />
+            <CardComponent
+              activeCard={activeCard}
+              activeCardChanger={setActiveCard}
+              title="With my team"
+              subtitle="Wikis, docs, tasks & projects, all in one place"
+            />
+          </Grid>
         </div>
       </Grid>
     </div>

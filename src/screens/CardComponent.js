@@ -10,13 +10,13 @@ import {
 import React from "react";
 
 const defaultCardStyle = {
-  display: "inline-block",
-  marginRight: "10px",
+  margin: "10px",
+  maxWidth: "200px",
 };
 
 const clickedCardStyle = {
-  display: "inline-block",
-  marginRight: "10px",
+  margin: "10px",
+  maxWidth: "200px",
   border: "1px solid #664de5",
 };
 
